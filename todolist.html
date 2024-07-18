@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="todolist.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>TodolooS</title>
+</head>
+<body>
+    <div class="sidenav" id="sidenav">
+        <img src="sketch-3-todo-list-app-icon-template-removebg-preview.png" alt="" class="logo">
+        <a href="#" id="newtask"> <i class="fa fa-plus"></i> Add Task</a>
+        <a href="#" id="newproject"> <i class="fa fa-bars"></i> New Project</a>
+    </div>
+    <div class="Fain">
+       <div class="text"> <h3 id="title" class="title">welcome to todolo ◡̈</h3>
+        <p class="fain-paragraph">Check your daily tasks and projects.</p></div>
+        <div class="pic"><img src="image.png" alt="" class="pic"></div>
+    </div>
+    <div class="main"></div>
+    <!-- Task Modal Structure -->
+    <div id="taskModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <form id="taskForm" class="form">
+                <label for="taskName">Task name</label>
+                <input type="text" id="taskName" name="taskName" required><br>
+                
+                <label for="description">Description</label>
+                <textarea id="description" name="description" required></textarea><br>
+                
+                <label for="dueDate">Due date</label>
+                <input type="date" id="dueDate" name="dueDate" value="2024-07-17" min="2000-01-01" max="2050-12-31" /><br>
+                
+                <label for="priority">Priority</label>
+                <select id="priority" name="priority" required>
+                    <option value="High">High</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Low">Low</option>
+                </select><br>
+                
+                <label for="parentProject">Parent project</label>
+                <select id="parentProject" name="parentProject" required>
+                    <option value="Inbox">Inbox</option>
+                </select><br>
+                
+                <button type="submit">Add Task</button>
+            </form>
+        </div>
+    </div>
+    
+    <!-- Project Modal Structure -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button-project">&times;</span>
+            <form id="projectForm" class="form">
+                <label for="projectName">Project name</label>
+                <input type="text" id="projectName" name="projectName" required><br>
+                
+                <button type="submit">Add Project</button>
+            </form>
+        </div>
+    </div>
+    <script src="todolist.js"></script>
+</body>
+</html>

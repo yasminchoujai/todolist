@@ -1,0 +1,271 @@
+/* Global styles */
+body {
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F3F5F9;
+}
+
+/* Side navigation */
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:#FCFBFF;
+    overflow-x: hidden;
+    padding-top: 20px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+
+}
+
+.sidenav a {
+    padding: 15px;
+    text-decoration: none;
+    font-size: 13px;
+    display: block;
+    margin-bottom: 20px;
+    color: rgb(95 50 140);
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.sidenav a:hover {
+  background-color: #dee0e6;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding: 15px;
+
+}
+
+
+
+.logo {
+    height: 45px;
+    width: 60px;
+    margin: 20px auto;
+    display: block;
+    margin-bottom: 50px;
+}
+
+/* Main content */
+.main {
+    margin-left: 160px; /* Adjust based on sidenav width */
+    padding: 20px;
+}
+
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.6);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%; /* Adjust as needed */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.close-button, .close-button-project {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-button:hover, .close-button-project:hover,
+.close-button:focus, .close-button-project:focus {
+    color: #000;
+    text-decoration: none;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form input, .form textarea, .form select {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid rgb(95 50 140)  ;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form button {
+    background-color: rgb(95 50 140);
+    color: black;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.form button:hover {
+    background-color: rgb(112, 94, 188);
+}
+.delete-project{
+    background-color: rgb(95 50 140);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 10px ;
+    border: white solid 1px;
+}
+.delete-task{
+    background-color: transparent;
+    border: none;
+    color: rgb(95 50 140);
+    border-radius:100px;
+    margin-left: 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    padding-top: 14px;
+}
+.delete-task:hover{
+    color: rgb(112, 94, 188);
+
+}
+.delete-project:hover{
+    background-color: rgb(112, 94, 188);
+    border: white solid 1px;
+
+}
+.task-item{
+    background-color: white;
+    border-radius: 10px;
+    width: 500px;
+    font-family: 'Times New Roman', Times, serif;
+    border:solid 1px white;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    color:  rgb(95 50 140);
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.project-item{
+    background-color: #dee0e6;
+    border-radius: 10px;
+    padding: 5px  5px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Times New Roman', Times, serif;
+    color:  rgb(95 50 140);
+    text-align: center;
+    margin: 10px;   
+
+
+}
+
+.title{
+align-content: center;
+margin-left: 30px;
+font-size: 17px;
+
+}
+.Fain{
+    background-color:#FCFBFF;
+    border-radius: 10px;
+    width: 74%;
+    margin-left: 18%;  
+    height: 55px; 
+    color:  rgb(95 50 140);
+    padding: 40px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+
+
+
+}
+input[type=checkbox]{
+    accent-color:  rgb(95 50 140);  
+    padding: 10px;
+    }
+    input[type=checkbox]:checked + label:before {
+        content: "\2713";
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+        font-size: 12px;
+        color: #fff;
+        text-align: center;
+          line-height: 12px;
+      }
+      .fain-paragraph{
+        color: #532e93;
+        font-size: smaller;
+        margin-left: 40px;
+
+      }
+      .project-text{
+        color: #532e93;
+        font-size: smaller;
+        margin-left: 40px;
+        padding-top: 10px;
+      }
+      .pic{
+        height: 150px;
+        width: 150px;
+        margin-bottom: 200px;
+      }
+      .sidenav::-webkit-scrollbar {
+        width: 14px;
+        height: 18px;
+      }
+      .sidenav::-webkit-scrollbar-thumb {
+        height: 6px;
+        border: 4px solid rgba(0, 0, 0, 0);
+        background-clip: padding-box;
+        background-color: #ddd;
+        -webkit-border-radius: 7px;
+        -webkit-box-shadow: inset -1px -1px 0px rgba(0, 0, 0, 0.05),
+          inset 1px 1px 0px rgba(0, 0, 0, 0.05);
+      }
+      
+      .sidenav::-webkit-scrollbar-button {
+        display: none;
+        width: 0;
+        height: 0;
+      }
+      
+      .sidenav:-webkit-scrollbar-corner {
+        background-color: transparent;
+      }
+      .main{
+        display: flex;
+        flex-direction: column;
+        
+      }
